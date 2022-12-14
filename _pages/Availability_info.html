@@ -1,0 +1,115 @@
+---
+layout: contact_sidebar
+---
+
+<a href="#page_header" class="sr-only sr-only-focusable">You are on step 3 of 7. Skip to main content</a>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 42.87%" aria-valuenow="42.87" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+
+<h2 id="page_header">Tell us about your availability</h2>
+<form>
+    <div class="js-form-availability">
+        <fieldset>
+            <legend>On an average day, what is the longest period of time foster animals will be left alone in the home?</legend>
+            <small id="availabilityHelpBlock" class="form-text text-muted">
+                "Alone" means without people to monitor eating, behavior, and going to the bathroom. For example, if you work in an office from 9am-5pm but come home from 12-1pm, then the longest time period alone would be 4 hours.
+            </small>
+            <div class="form-check">
+                <input class="js-left-alone-selection form-check-input" type="radio" name="availabilityRadios" id="availabilityRadios1" value="0-4 hours">
+                <label class="form-check-label" for="availabilityRadios1">
+                0-4 hours
+                </label>
+                <!-- Alert for this removed but leaving in comments below in case we bring back -->
+                <!-- <div class="js-selection-alert-text alert alert-info d-none row" role="alert">
+                    <i class="fas fa-info-circle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <p>While we won’t limit your foster choices, you’d be a great candidate for a puppy, kitten, or animal with medical or behavioral needs. </p>
+                        <p>They need more care than most animals, and it’s rare that foster care providers can take in these pets.</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="form-check">
+                <input class="js-left-alone-selection form-check-input" type="radio" name="availabilityRadios" id="availabilityRadios2" value="4-8 hours">
+                <label class="form-check-label" for="availabilityRadios2">
+                4-8 hours
+                </label>
+                <!-- Alert for this removed but leaving in comments below in case we bring back -->
+                <!-- <div class="js-selection-alert-text alert alert-info d-none row" role="alert">
+                    <i class="fas fa-info-circle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <p>You’d be a great candidate for an adult cat or dog with medical or behavioral needs!</p>
+                        <p>While we won’t limit your foster choices, these animals need more care than most, and it’s rare that foster care providers can take in these pets.</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="form-check">
+                <input class="js-left-alone-selection form-check-input" type="radio" name="availabilityRadios" id="availabilityRadios3" value="8-12 hours">
+                <label class="form-check-label" for="availabilityRadios3">
+                8-12 hours
+                </label>
+                <div class="js-selection-alert-text alert alert-info d-none row" role="alert">
+                    <i class="fas fa-info-circle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <b>While we won’t limit your foster choices, you’d be a great candidate for healthy adult or senior dogs or cats.</b>
+                        <p>The dogs can generally be alone 8-12 hours at a time, and the cats can usually go 10 hours or more as long as they have access to everything that they need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-check">
+                <input class="js-left-alone-selection form-check-input" type="radio" name="availabilityRadios" id="availabilityRadios4" value="12+ hours">
+                <label class="form-check-label" for="availabilityRadios4">
+                    12+ hours
+                </label>
+                <div class="js-selection-alert-text alert alert-info d-none row" role="alert">
+                    <i class="fas fa-info-circle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <b>Being gone for several hours is okay! While we won’t limit your foster choices, you’d be a great candidate for healthy adult and senior cats.</b>
+                        <p>They can usually go 12 hours or more as long as they have access to everything that they need.</p>
+                        <p>You may also be a good candidate for animal outings or overnight stays.</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        {% include add_explanation.html %}
+    </div>
+    <div class="js-adopters-help-selection">
+        <fieldset>
+            <legend>Can you meet with and show the foster animal to people who might want to adopt it?</legend>
+            <small id="adoptersHelpBlock" class="form-text text-muted">
+                These meetings would be scheduled by you, at times and locations of your choice.
+            </small>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="adoptersRadios" id="adoptersRadios1" value="Yes">
+                <label class="form-check-label" for="adoptersRadios1">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="adoptersRadios" id="adoptersRadios2" value="No">
+                <label class="form-check-label" for="adoptersRadios2">
+                No
+                </label>
+                <div class="alert alert-warning d-none js-adopters-help-alert row" role="alert">
+                    <i class="fas fa-exclamation-triangle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <p>Promoting the foster animal and meeting with potential adopters is an important part of our program.</p>
+                        <p>When fostering an animal for AAC, you can be the animal’s number one advocate!</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        {% include add_explanation.html %}
+    </div>
+  <a class="btn btn-primary" href="Home_info.html" role="button">Next</a>
+  <a class="btn btn-outline-primary" href="Yourself_info.html" role="button">Back</a>
+</form>

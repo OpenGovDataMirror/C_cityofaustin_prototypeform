@@ -1,0 +1,136 @@
+---
+layout: contact_sidebar
+---
+
+<a href="#page_header" class="sr-only sr-only-focusable">You are on step 4 of 7. Skip to main content</a>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 57.16%" aria-valuenow="57.16" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 id="page_header">Tell us about your home</h2>
+<form>
+    <div class="own-home">
+        <fieldset>
+            <legend>Do you own your home?</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="landlordRadios" id="landlordRadios1" value="Yes">
+                <label class="form-check-label" for="landlordRadios1">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="landlordRadios" id="landlordRadios2" value="No">
+                <label class="form-check-label" for="landlordRadios2">
+                No
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        {% include add_explanation.html %}
+    </div>
+    <div class="js-permission-home-selection">
+        <fieldset>
+            <legend>Do you have permission from your landlord or property manager to have an animal in your home?</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="permissionRadios" id="permissionRadios1" value="Yes">
+                <label class="form-check-label" for="permissionRadios1">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="permissionRadios" id="permissionRadios2" value="No">
+                <label class="form-check-label" for="permissionRadios2">
+                No
+                </label>
+                <div class="alert alert-warning d-none js-permission-home-alert row" role="alert">
+                    <i class="fas fa-exclamation-triangle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <p>Make sure you get permission from the homeowner or property manager to have pets in your home, and identify if there are breed or weight restrictions for dogs. </p>
+                        <p>If you need help getting permission from the homeowner or property manager, let us know.</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        {% include add_explanation.html %}
+    </div>
+    <!-- 2 below 'add explanation' entries to review visual difference only. Once visual styling determined, replace 'add explanation' function -->
+    <!-- <div class="js-add-explanation">
+        <a href="#">+ Add additional information</a>
+        <small id="add_explanationHelpInline" class="text-muted">
+          Optional
+        </small>
+        <textarea class="d-none js-explanation-field form-control" name="name" rows="3" cols="80"></textarea>
+    </div>
+    <div>
+        <i class="fas fa-plus-circle"></i>
+        <span>Add additional information</span>
+        <small id="add_explanationHelpInline" class="text-muted">
+            Optional
+        </small>
+    </div> -->
+    <div class="js-indoors-selection">
+        <fieldset>
+            <legend>Are you planning to have your foster animal live indoors?</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="can_indoorsRadios" id="can_indoorsRadios1" value="Yes">
+                <label class="form-check-label" for="can_indoorsRadios1">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="can_indoorsRadios" id="can_indoorsRadios2" value="No">
+                <label class="form-check-label" for="can_indoorsRadios2">
+                No
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="can_indoorsRadios" id="can_indoorsRadios3" value="Maybe">
+                <label class="form-check-label" for="can_indoorsRadios3">
+                Maybe
+                </label>
+                <div class="alert alert-warning d-none js-indoors-alert row" role="alert">
+                    <i class="fas fa-exclamation-triangle fa-2x fa-fw col-md-1"></i>
+                    <div class="col-md-11 alert-body">
+                        <p>You may continue the application, but before bringing home a foster animal, make sure it can reside indoors:</p>
+                        <ul>
+                            <li>Kittens and cats should only be kept indoors, because there’s a high risk of them running away.</li>
+                            <li>Puppies and dogs should be kept primarily indoors, but can go outside for potty breaks, play time, and exercise.</li>
+                        </ul>
+                        <p>If you don't think you'll be able to have your foster animal live indoors, please let us know and we may be able to help you figure out a solution.</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        {% include add_explanation.html %}
+    </div>
+    <div class="js-children">
+        <fieldset>
+            <legend>Do any children under 18 live in your home or visit often?</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="childrenRadios" id="childrenRadios1" value="Yes">
+                <label class="form-check-label" for="childrenRadios1">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="childrenRadios" id="childrenRadios2" value="No">
+                <label class="form-check-label" for="childrenRadios2">
+                No
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-row d-none js-children-followup">
+        <div class="form-group col-md-6">
+          <label for="inputChildren">Please list the ages of all children under 18 living in or often visiting your home.</label>
+          <input type="text" class="form-control" id="inputChildren" placeholder=" ">
+        </div>
+    </div>
+    <a class="btn btn-primary" href="Animal_info.html" role="button">Next</a>
+    <a class="btn btn-outline-primary" href="Availability_info.html" role="button">Back</a>
+  </form>

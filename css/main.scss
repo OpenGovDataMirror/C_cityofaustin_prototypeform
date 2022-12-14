@@ -1,0 +1,143 @@
+---
+# Entry Point Sass file for project. More Sass files may be added to _sass/
+# More info: http://markdotto.com/2014/09/25/sass-and-jekyll/
+---
+
+html, body {
+    font-family: "Open Sans", sans-serif, "Montserrat", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.col-md-4 {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 625;
+    margin-top: 5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 625;
+    margin-top: 2.5rem;
+}
+
+h5, legend {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+p, ul, li, b {
+    font-size: 1.1rem;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+span {
+    display: inline-block;
+}
+
+.small, small {
+    font-size: 90%;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    color: #240b33;
+}
+
+.text-muted {
+    color: #240b33;
+}
+
+.form-group, .form-check, .js-explanation-field, h1, h2, h3, h4, h5, p, li, span, small, .alert {
+    max-width: 545px;
+    color: #191919;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.add-explanation {
+    margin-top: 0px;
+}
+
+.animal-info {
+    border-style: dotted;
+    border-color: darkgrey;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    margin: 1rem 0 0;
+    .close {
+      margin: 5px -20px;
+    }
+}
+
+.progress {
+    height: 1.2rem;
+}
+
+.progress-bar {
+    border-right-style: solid;
+    border-right-color: white;
+}
+
+.alert {
+    padding: 1.25rem 0.75rem 0.5rem 0.85rem;
+    margin-top: 1rem;
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.alert-warning {
+    color: #343a40;
+}
+
+.fa-exclamation-triangle, .fa-times-circle, .fa-info-circle, .fa-ban, {
+    padding: 0px;
+}
+
+.fa-plus-circle {
+    color: #007bff;
+}
+
+.alert-body {
+    padding: 0rem 0.25rem 0rem .9rem;
+}
+
+.call-out {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-left: #ced4da;
+    border-left-style: solid;
+    border-left-width: 8px;
+}
